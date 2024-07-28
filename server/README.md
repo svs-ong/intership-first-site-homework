@@ -27,31 +27,14 @@ npm install
 node server
 ```
  
-  - The server will run on `http://localhost:3000`.
+- The server will run on `http://localhost:3000`.
 
-#### Usage 
- 
-- **Retrieve Articles**  
-  - Access all articles by navigating to the `/articles` endpoint:
-
-```bash
-curl http://localhost:3000/articles
-```
-
-  - This command returns a JSON array of articles.
- 
-- **Welcome Message**  
-  - Access the root URL to receive a greeting:
-
-```bash
-curl http://localhost:3000/
-```
 
 ### API Endpoints 
  
-- **GET `/`** : Returns a welcome message.
+- **GET `http://localhost:3000/`** : Returns a welcome message.
  
-- **GET `/articles`** : Outputs a JSON array of all articles.
+- **GET `http://localhost:3000/articles`** : Outputs a JSON array of all articles.
 
 
 ---
