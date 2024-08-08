@@ -16,7 +16,7 @@ async function getElementFromFile(filePath, elementId) {
 }
 
 async function loadContent() {
-    const header = await getElementFromFile('/components/header.html', 'header');
+    const header = await getElementFromFile('/components/header/header.html', 'header');
     const footer = await getElementFromFile('/components/footer.html', 'footer');
 
     document.getElementById('header').appendChild(header);
