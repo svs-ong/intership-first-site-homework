@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.flex-container {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
