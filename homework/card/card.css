@@ -1,0 +1,38 @@
+.home-articles{
+    display: flex;
+    margin-right: 150px;
+}
+@media screen and (max-width: 480px) {
+    .home-articles {
+        display: block;
+        margin-right: 5px;
+    }
+    .home-articles .card {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+}
+.card-image{
+    width: 250px;
+    height: 200px;
+}
+
+.home-articles a{
+    text-decoration: none;
+    color:black;
+}
+.center{
+    border: 2px solid #94e4e4;
+    margin: 7px;
+    padding: 15px;
+    background-color: #eefbfb;
+    text-align: center;
+    border-radius: 4px;
+}
+.text-muted{
+    text-align: right;
+    color: grey;
+}
+.author_span{
+    margin: 30px;
+}
