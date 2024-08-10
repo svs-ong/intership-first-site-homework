@@ -1,13 +1,13 @@
-.home-articles{
+.card.styles.css{
     display: flex;
     margin-right: 150px;
 }
 @media screen and (max-width: 480px) {
-    .home-articles {
+    .card.styles.css {
         display: block;
         margin-right: 5px;
     }
-    .home-articles .card {
+    .card.styles.css .card {
         width: 100%;
         margin-bottom: 10px; 
     }
@@ -16,8 +16,7 @@
     width: 250px;
     height: 200px;
 }
-
-.home-articles a{
+.card.styles.css a{
     text-decoration: none;
     color:black;
 }
