@@ -9,7 +9,7 @@ async function main() {
         const templateSource = document.getElementById("article-template").innerHTML; //Get the template source from the html file
         const template = Handlebars.compile(templateSource);
         const articles = await fetch_articles();
-        const articleIndex = 0; // Change this to the index of the article you want to render
+        const articleIndex = 2; // Change this to the index of the article you want to render
         const article = articles[articleIndex];
         const html = template(article);
         articlesContainer.innerHTML = html;
