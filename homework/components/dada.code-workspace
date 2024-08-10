@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../dada"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "intership-first-site-homework-main"
+	}
+}

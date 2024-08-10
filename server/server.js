@@ -1,34 +1,39 @@
-const database_file_name = 'db.json'
-const express = require('express');
-const fs = require('fs');
-const app = express();
-const PORT = 3000;
+// server.js
+const jsonServer = require("json-server");
+const path = require("path");
+const server = jsonServer.create();
+const router = jsonServer.router(path.join(__dirname, "db.json"));
+const db = router.db;
+const middlewares = jsonServer.defaults();
 
-// Middleware to serve static files
-app.use(express.static('public'));
+server.use(middlewares);
+server.use(jsonServer.bodyParser);
 
-app.get('/articles', (req, res) => {
-    fs.readFile(database_file_name, 'utf8', (err, data) => {
-        if (err) {
-            res.status(500).send('Error reading data from file.');
-            return;
-        }
-        try {
-            const jsonData = JSON.parse(data);
-            const articles = jsonData.articles;
-            res.setHeader('Content-Type', 'application/json');
-            res.send(articles);
-        } catch (parseError) {
-            res.status(500).send('Error parsing JSON data.');
-        }
-    });
+server.post("/feedback", async (req, res) => {
+  // email should be unique
+
+  const feedback = req.body;
+  const email = feedback.userEmail;
+
+  console.log(req.body);
+
+  const dbState = await db.getState();
+  const existingFeedback = dbState.feedback.find(
+    (feedback) => feedback.userEmail === email
+  );
+  if (existingFeedback) {
+    res.status(400).send({ errorMessage: "Email already exists" });
+    return;
+  }
+
+  dbState.feedback.push(feedback);
+  await db.setState(dbState);
+  await db.write();
+  res.sendStatus(200);
 });
 
-// Route to return a simple greeting message
-app.get('/', (req, res) => {
-    res.send('Hello, welcome to our article service!');
-});
+server.use(router);
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+server.listen(3000, () => {
+  console.log("JSON Server is running");
 });

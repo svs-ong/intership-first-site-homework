@@ -1,40 +1,23 @@
-### README for Article Server 
+A json-server used to mimic a HTTP based rest API for the react internship theoretical training.
 
-#### Overview 
+## Installation
 
-This server uses Express to serve articles stored in a JSON file via a REST API.
+Make sure you have [Node.js](https://nodejs.org/en/) installed.
 
-#### Prerequisites 
- 
-- **Node.js**  
-  - The server requires Node.js. Download and install it from [Node.js official website](https://nodejs.org/) .
-
-#### Installation 
- 
-1. **Install Dependencies**  
-  - After installing Node.js, run the following command in your project directory to install the necessary dependencies:
+Then, open a terminal at the root of `json-server` and run:
 
 ```bash
 npm install
 ```
 
-#### Running the Server 
- 
-- **Start the Server**  
-  - Start the server using this command:
+## Usage
+
+To start the server, run:
 
 ```bash
-node server
+npm start
 ```
- 
-- The server will run on `http://localhost:3000`.
 
+## License
 
-### API Endpoints 
- 
-- **GET `http://localhost:3000/`** : Returns a welcome message.
- 
-- **GET `http://localhost:3000/articles`** : Outputs a JSON array of all articles.
-
-
----
+MIT
