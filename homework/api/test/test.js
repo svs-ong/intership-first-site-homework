@@ -1,13 +1,7 @@
 import { fetch_articles } from '../fetch_articles.js';
 
 document.addEventListener("DOMContentLoaded", main);
-
-// async function main() {
-//     getArticlesArray();
-//   
-//     articles.forEach(article => {
-//     });
-// }
+ 
 async  function main()
 {
     let articles=await fetch_articles();
@@ -30,5 +24,6 @@ function createDiv(article)
         titleElement.innerText=article.title; // appends the article.title  inside the h2
 
         articleDiv.appendChild(titleElement); // appends the title to the div
+
         return articleDiv; //returns the div to be later appended in the main function
 }

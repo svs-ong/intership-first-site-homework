@@ -1,0 +1,19 @@
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+.card h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
