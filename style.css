@@ -1,0 +1,135 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;   
+}
+
+.navLeft {
+    color: lightseagreen;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.nav-items {
+    color: black;
+    font-weight: bold;
+    font-family: 'Arial';
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.form-input {
+    border-color: lightseagreen;
+}
+
+.btn-pink {
+    background-color: lightseagreen; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 5px 10px; /* Padding inside the button */
+    border-radius: 3px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.content-right2 {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    width: 300px; /* Set a specific width or adjust as needed */
+    border-radius: 50%; /* Make the image round (optional) */
+}
+
+.content {
+    display: flex;
+}
+
+.content-left {
+    flex-grow: 7;
+    font-family: 'Arial';
+}
+
+.m-1 {
+    font-weight: bold;
+}
+
+.m-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.years {
+   flex-direction: row;
+}
+
+.home-articles {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-article-center {
+    display: inline-block;
+    background-color: rgb(205, 246, 243);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 2%;
+}
+
+.image0 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 3px dashed lightseagreen;
+}
+
+.image1 {
+    width: 200px;
+    height: 200px;
+}
+
+.image2 {
+    width: 200px;
+    height: 200px;
+}
+
+.image3 {
+    width: 200px;
+    height: 200px;
+}
+
+.image4 {
+    width: 200px;
+    height: 200px;
+}
+
+.home-article-center2 {
+    display: inline-block;
+    background-color: rgb(205, 246, 243);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 2%;
+}
+
+.home-article-center3 {
+    display: inline-block;
+    background-color: rgb(205, 246, 243);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 2%;
+}
+
+.home-article-center4 {
+    display: inline-block;
+    background-color: rgb(205, 246, 243);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 2%;
+}
