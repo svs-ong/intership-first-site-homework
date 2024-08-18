@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './Nav.css';
 
 export const Nav: React.FC = () => {
     const [searchQuery,setSearchQuery] =useState<string>('');
@@ -18,7 +19,7 @@ export const Nav: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/logo" className="NavItem">Logo</Link>
+            <Link to="/logo" className="NavItem1">Logo</Link>
           </li>
           <li>
             <Link to="/home" className="NavItem">Home</Link>
