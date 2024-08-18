@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Nav.css';
+import '../styles/Nav.styles.css';
 
 export const Nav: React.FC = () => {
     const [searchQuery,setSearchQuery] =useState<string>('');
