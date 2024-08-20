@@ -1,0 +1,51 @@
+# Dependency directories
+node_modules/
+
+# Production build folder
+/build
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# Next.js specific files
+.next/
+out/
+
+# Ignore Storybook static build folder
+/storybook-static
+
+# Misc
+*.pem
