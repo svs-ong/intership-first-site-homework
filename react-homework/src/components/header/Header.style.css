@@ -1,0 +1,50 @@
+.logo {
+    font-size:x-large;
+    color:darkturquoise;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.center {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 0 20px;
+}
+
+.navLeft {
+    float: left;
+}
+
+.navCenter {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.navRight {
+    float: right;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin: 0 50px;
+    padding-bottom: 10px; 
+}
+
+.form-input {
+    padding: 5px;
+    border: 2px solid darkturquoise;
+    border-radius: 5px;
+}
+
+.btn-blue {
+    color: white;
+    background-color: darkturquoise;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
