@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Nav } from './components/Nav';
-import { HeroSection } from './components/HeroSection';
 import { HomePageFunction } from './pages/Home/HomePage';
 import { LogoPageFunction } from './pages/Logo/LogoPage';
 import { ContactPageFunction } from './pages/Contact/ContactPage';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
     <div className='wrapper'>
       <><Router>
         <Nav />
-        <HeroSection />
         <div className='content'>
           <Routes>
             <Route path="/logo" element={<LogoPageFunction />} />
