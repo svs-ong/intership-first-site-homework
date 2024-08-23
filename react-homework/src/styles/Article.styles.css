@@ -1,92 +1,112 @@
+/* General styling for the articles */
 .article {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     border: 1px solid #b3d8d6; 
     border-radius: 10px;     
     overflow: hidden;        
     padding: 20px;
     max-width: 300px;     
     margin: 10px;
+    margin-bottom: 30px;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     background-color: #c5e3f662;    
+    height: 100%;
 }
 
+/* Hover effect for the article */
 .article:hover {
     transform: translateY(-8px); 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Content inside the article */
 .article-content {
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
+    flex-grow: 1;
 }
 
+/* Image styling */
 .article-content img {
-    max-width: 100%; /* Makes the image responsive */
-    height: auto;
+    max-width: 100%; 
+    height: 180px; 
+    object-fit: cover;
     border-radius: 10px;
 }
 
+/* Title styling */
 .article-content h2 {
     font-size: 22px;
     font-weight: bold;
     margin: 15px 0 10px;
 }
 
+/* Description styling */
 .article-content p {
     font-weight: bold;
     font-size: 16px;
     color: #555;
 }
 
+/* Footer styling */
 .article-footer {
     display: flex;
-    flex-direction:column;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: flex-end;
     font-size: 14px;
     color: #777; 
     padding-top: 10px;
+    margin-top: auto;
 }
 
+/* Footer item styling */
 .article-footer div {
     margin-top: 5px;
+    padding-bottom: 5px;
 }
 
+/* Author styling */
 .article-author {
     font-weight: bold;
 }
 
+/* Other footer items styling */
 .article-ttr, .article-date {
     color: #444;
     font-weight: bolder;
 }
+
+/* Footer item hover effect */
 .article-footer div:hover {
     color: #007bff; 
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
+/* Author hover effect */
 .article-footer .article-author:hover{
     color: #0050a5; 
     cursor: pointer;
     transition: color 0.3s ease;
 }
 @media (min-width: 500px) {
+    .article {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
     .article-footer {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-
     }
     .article-author {
         margin-bottom: 0;
     }
     .article-footer div {
-        flex-direction: row; 
         margin-top: 0;
     }
     .article-footer div:not(:last-child) {
         margin-right: 5px;
     }
 }
-
