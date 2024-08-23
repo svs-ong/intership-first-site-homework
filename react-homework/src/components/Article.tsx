@@ -6,14 +6,15 @@ interface ArticleProps
     "title":string;
     "description":string;
     "author":string;
-    "timeToRead":number;
+    "rating": string;
+    "timeToRead":string;
     "date":string;
 }
-export const Article:React.FC<ArticleProps>=({title,description,date,imgurl,author,timeToRead})=>{
+export const Article:React.FC<ArticleProps>=({title,description,date,imgurl,author,timeToRead,rating})=>{
     return (
         <div className="article">
             <div className="article-content">
-            <img src={imgurl} alt="ImagePlaceHolder"></img>
+            <img src={imgurl}alt="No image availabe"></img>
             <h2>{title}</h2>
             <p>{description}</p>
             </div>
@@ -24,8 +25,11 @@ export const Article:React.FC<ArticleProps>=({title,description,date,imgurl,auth
                 <div className="article-date">
                 <p>{date}</p>
                 </div>
+                <div className="article-date">
+                <p>{rating}</p>
+                </div>
                 <div className="article-ttr">
-                <p>{timeToRead} min read</p>
+                <p>{timeToRead}</p>
                 </div>
             </div>
         </div>

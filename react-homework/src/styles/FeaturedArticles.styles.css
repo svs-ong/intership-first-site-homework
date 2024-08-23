@@ -48,7 +48,7 @@
 }
 @media (max-width: 1024px) {
     .article-item {
-        width: calc(50% - 16px); /* Three articles per row on medium screens */
+        width: calc(50% - 16px); /* Adjusts width on smaller screens */
     }
 }
 

@@ -1,0 +1,69 @@
+{
+  "articles": [
+      {
+          "title": "Exploring the Depths of the Mariana Trench",
+          "imageurl": "https://i.ytimg.com/vi/E_o6jKrZsg8/maxresdefault.jpg",
+          "description": "Join us as we delve into the mysteries of the deepest part of the world's oceans to discover unique marine life and stunning new ecosystems.",
+          "author": "Jane Doe",
+          "rating": 4.7,
+          "date": "2020-07-26",
+          "readingTime": "15min"
+      },
+      {
+          "title": "The Future of Renewable Energy",
+          "description": "An in-depth analysis of upcoming technologies in renewable energy that could revolutionize how we power our world.",
+          "author": "John Smith",
+          "rating": 4.8,
+          "date": "2020-07-20",
+          "readingTime": "10min"
+      },
+      {
+          "title": "AI and Machine Learning: Prospects and Challenges",
+          "imageurl": "https://i.ytimg.com/vi/E_o6jKrZsg8/maxresdefault.jpg",
+          "description": "Explore the exciting advancements and the ethical concerns surrounding the rapid growth of AI and machine learning technologies.",
+          "author": "Alice Johnson",
+          "rating": 4.9,
+          "date": "2021-07-18"
+      },
+      {
+          "title": "Discovering Hidden Gems: Lesser-Known Historical Sites in Europe",
+          "imageurl": "https://example.com/historical-sites-europe.jpg",
+          "description": "A travel guide to some of the most intriguing and yet underappreciated historical sites across Europe.",
+          "author": "Carlos Esteban",
+          "rating": 4.6,
+          "date": "2021-07-15",
+          "readingTime": "20min"
+      },
+      {
+          "title": "Revolutionizing Healthcare with Telemedicine",
+          "imageurl": "https://i.ytimg.com/vi/E_o6jKrZsg8/maxresdefault.jpg",
+          "description": "How telemedicine is transforming patient care by offering remote diagnostics and treatments that bridge geographical barriers.",
+          "author": "",
+          "date": "2020-07-10",
+          "readingTime": "12min"
+      },
+      {
+          "title": "Urban Farming: The Future of Food Production",
+          "imageurl": "https://i.ytimg.com/vi/E_o6jKrZsg8/maxresdefault.jpg",
+          "description": "Discover how urban farming is set to change the urban landscape and solve food security issues in densely populated areas.",
+          "rating": 4.4,
+          "date": "2021-07-05",
+          "readingTime": "1h 5min"
+      },
+      {
+          "title": "Blockchain Beyond Cryptocurrency",
+          "imageurl": "https://i.ytimg.com/vi/E_o6jKrZsg8/maxresdefault.jpg",
+          "description": "An exploration of blockchain technology applications beyond just cryptocurrency, from supply chains to voting systems.",
+          "author": "David Choi",
+          "date": "2021-07-01",
+          "readingTime": "30min"
+      },
+      {
+          "title": "The Evolution of Digital Art",
+          "description": "A look into how digital art has evolved over the decades, influencing the art scene and creating new forms of expression.",
+          "author": "",
+          "rating": 4.2,
+          "date": "2020-06-28"
+      }
+  ]
+}
