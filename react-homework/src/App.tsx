@@ -22,7 +22,7 @@ const App: React.FC = () => {
     <div className='wrapper'>
       <><Router>
         <Nav />
-        <div className='content'>
+        <div className='appContent'>
           <Routes>
             <Route path="/logo" element={<LogoPageFunction />} />
             <Route path="/contact" element={<ContactPageFunction />} />
