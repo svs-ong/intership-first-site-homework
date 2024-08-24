@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, 
+{ 
+  useState, 
+  useEffect 
+}
+from "react";
 import { Article } from "./Article";
-import '../styles/FeaturedArticles.styles.css';
 import HomeImg from '../img/home.svg'; // Default image
+import '../styles/FeaturedArticles.styles.css';
 
 interface FeaturedArticlesProps {
   date: string;
@@ -9,31 +14,40 @@ interface FeaturedArticlesProps {
 
 interface ArticleProps {
   title: string;
-  imageurl?: string; // Optional property
   description: string;
-  author?: string; // Optional property
-  rating?: string; // Optional property
   date: string;
-  readingTime?: string; // Optional property
+  imageurl?: string; 
+  author?: string; 
+  rating?: string; 
+  readingTime?: string; 
 }
 
 export const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ date }) => {
+
   const [selectedDate, setSelectedDate] = useState<string>(date);
   const [articlesList, setArticlesList] = useState<ArticleProps[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<unknown>();
 
   const fetch_articles = async () => {
+
     console.log("Fetching articles...");
+
     try {
+
       const response = await fetch('http://localhost:3000/articles');
       const result = await response.json();
+
       console.log("Data fetched successfully");
+
       setArticlesList(result ||  []);
       setLoading(false);
+
     } catch (error) {
+
       setLoading(false);
       setError(error);
+
     }
   }
 
@@ -46,7 +60,9 @@ export const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ date }) => {
   };
 
   const filteredArticles = articlesList.filter(article => {
+
     const articleYear = article.date.split('-')[0]; 
+
     return articleYear === selectedDate;
   });
 
@@ -110,5 +126,4 @@ export const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ date }) => {
     </div>
   );
 };
-
 export default FeaturedArticles;

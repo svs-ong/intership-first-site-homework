@@ -1,5 +1,7 @@
+
 import React from "react";
 import '../styles/Article.styles.css';
+
 interface ArticleProps
 {
     "imgurl":string;
@@ -10,7 +12,16 @@ interface ArticleProps
     "timeToRead":string;
     "date":string;
 }
-export const Article:React.FC<ArticleProps>=({title,description,date,imgurl,author,timeToRead,rating})=>{
+
+export const Article:React.FC<ArticleProps>=({
+    title,
+    description,
+    date,
+    imgurl,
+    author,
+    timeToRead,
+    rating
+    })=> {
     return (
         <div className="article">
             <div className="article-content">
