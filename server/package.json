@@ -1,16 +1,13 @@
 {
-  "name": "json-server",
+  "name": "node-json-server",
   "version": "1.0.0",
-  "description": "A json-server used to mimic a HTTP based rest API for the react internship theoretical training",
-  "main": "index.js",
+  "description": "A simple Node.js server to read data from db.json",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "debug": "node  --inspect server.js --watch ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "Radu B",
-  "license": "ISC",
   "dependencies": {
-    "json-server": "file:"
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   }
 }

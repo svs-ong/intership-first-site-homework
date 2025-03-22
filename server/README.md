@@ -17,7 +17,3 @@ To start the server, run:
 ```bash
 npm start
 ```
-
-## License
-
-MIT

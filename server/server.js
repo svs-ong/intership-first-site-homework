@@ -1,39 +1,40 @@
-// server.js
-const jsonServer = require("json-server");
+const express = require("express");
+const fs = require("fs");
 const path = require("path");
-const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db.json"));
-const db = router.db;
-const middlewares = jsonServer.defaults();
+const cors = require("cors");
 
-server.use(middlewares);
-server.use(jsonServer.bodyParser);
+const app = express();
+const PORT = 3000;
+const DB_PATH = path.join(__dirname, "db.json");
 
-server.post("/feedback", async (req, res) => {
-  // email should be unique
+// Middleware to enable CORS
+app.use(cors());
 
-  const feedback = req.body;
-  const email = feedback.userEmail;
+// Middleware to parse JSON
+app.use(express.json());
 
-  console.log(req.body);
-
-  const dbState = await db.getState();
-  const existingFeedback = dbState.feedback.find(
-    (feedback) => feedback.userEmail === email
-  );
-  if (existingFeedback) {
-    res.status(400).send({ errorMessage: "Email already exists" });
-    return;
-  }
-
-  dbState.feedback.push(feedback);
-  await db.setState(dbState);
-  await db.write();
-  res.sendStatus(200);
+// Hello world route
+app.get("/", (req, res) => {
+  res.send("Use /data endpoint to retrieve data");
 });
 
-server.use(router);
+// GET endpoint to retrieve data from db.json
+app.get("/articles", (req, res) => {
+  fs.readFile(DB_PATH, "utf8", (err, data) => {
+    if (err) {
+      console.error("Error reading the file:", err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    try {
+      const jsonData = JSON.parse(data);
+      res.json(jsonData.articles);
+    } catch (parseError) {
+      console.error("Error parsing JSON:", parseError);
+      res.status(500).json({ error: "Invalid JSON format" });
+    }
+  });
+});
 
-server.listen(3000, () => {
-  console.log("JSON Server is running");
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
