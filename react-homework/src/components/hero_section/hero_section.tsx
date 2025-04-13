@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="description">kknkgjpkdjpkjksjpkjlkpoknpkj[ljpiokpo[lojoiopepikjkjsdffffffkffffffffffffffffffffffffffffffffffffff</p>
       </div>
       <div className="image-container">
-        <img src="image_URL" alt="Hero Image" className="image" /> 
+        <img src="image_URL" alt="" className="image" /> 
         <div className="circle" />
       </div>
     </div>
