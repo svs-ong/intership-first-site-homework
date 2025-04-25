@@ -27,7 +27,7 @@ async function insertHTML(copyLocation, pasteLocation) {
 
 async function insertCSS(copyLocation,pasteLocation)
 {
-  const CSScode =await getTextFromFile(copyLocation);
+  const CSScode = await getTextFromFile(copyLocation);
   if(CSScode)  
     {
       const styleElement = document.createElement("style");
