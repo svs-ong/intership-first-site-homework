@@ -7,7 +7,6 @@
     <title>Blog</title>
 
     <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/components/header/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,15 +16,14 @@
   <body>
     <header id="header" class="m-1">
       <nav class="flex-container">
-        <div class="navLeft">
-          <a href="index.html"> Logo </a>
+        <div class="navLeft" style="flex: 1; display: flex; justify-content: flex-start; align-items: center;">
+          <a href="index.html"><img src="img/logo.jpg" alt="Logo" class="logo" style="width: 80px; height: auto;" /></a>
         </div>
         <div class="navCenter">
-          <ul class="nav-items">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-          </ul>
+            <ul class="nav-items">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
         <form action="search.html">
           <div class="navRight">
@@ -42,23 +40,25 @@
     </header>
     <main>
       <div class="content">
-        <div class="content-left">
-          <h1 class="m-1">Typing</h1>
-          <p class="m-1">
-            The basic technique stands in contrast to hunt and peck typing in
-            which the typist keeps their eyes on the source copy at all times.
-            Touch typing also involves the use of the home row method, where
-            typists rest their wrist down, rather than lifting up and typing
-            (which can cause carpal tunnel syndrome). To avoid this, typists
-            should sit up tall, leaning slightly forward from the waist, place
-            their feet flat on the floor in front of them with one foot slightly
-            in front of the other, and keep their elbows close to their sides
-            with forearms slanted slightly upward to the keyboard; fingers
-            should be curved slightly and rest on the home row.
-          </p>
-        </div>
-        <div class="content-right">
-          <img src="./img/home.svg" alt="000" />
+        <div class="content-container" style="display: flex; align-items: center; justify-content: space-between;">
+          <div class="content-left" style="flex: 1; margin-right: 20px;">
+            <h1 class="m-1" style="font-size: 500%; color: rgb(255, 0, 170);" >TYPING...</h1>
+            <p class="m-1">
+              The basic technique stands in contrast to hunt and peck typing in
+              which the typist keeps their eyes on the source copy at all times.
+              Touch typing also involves the use of the home row method, where
+              typists rest their wrist down, rather than lifting up and typing
+              (which can cause carpal tunnel syndrome). To avoid this, typists
+              should sit up tall, leaning slightly forward from the waist, place
+              their feet flat on the floor in front of them with one foot slightly
+              in front of the other, and keep their elbows close to their sides
+              with forearms slanted slightly upward to the keyboard; fingers
+              should be curved slightly and rest on the home row.
+            </p>
+          </div>
+          <div class="content-right" style="flex: 1; text-align: center;">
+            <img src="./img/home.svg" alt="000" style="height: fit-content; width: fit-content" />
+          </div>
         </div>
       </div>
       <div class="max-width-1 margin-auto">
@@ -66,7 +66,7 @@
       </div>
       <div class="home-div-articles p-3">
         <div class="m-2">
-          <h2>Featured Articles</h2>
+          <h2 style="font-family: 'Outfit', 'sans-serif'; font-size: 40pt; text-align: center; color: rgb(112, 0, 73);">Featured Articles</h2>
           <div class="yearBox">
             <div>
               <h4>Date</h4>
@@ -83,7 +83,7 @@
         </div>
         <div class="home-articles">
           <div class="home-article-center">
-            <a href="/blog-in-html-css/blogpost.html" class="text-center">
+            <a href="blogpost.html" class="text-center">
               <img src="img/coffee.jpg " alt="" />
               <div class="home-article-bottom-m-1">
                 <h3>Title</h3>
@@ -104,7 +104,7 @@
             </a>
           </div>
           <div class="home-article-center">
-            <a href="/blog-in-html-css/blogpost.html" class="text-center">
+            <a href="blogpost.html" class="text-center">
               <img src="img/coffee.jpg " alt="" />
               <div class="home-article-bottom-m-1">
                 <h3>Title</h3>
@@ -125,7 +125,7 @@
             </a>
           </div>
           <div class="home-article-center">
-            <a href="/blog-in-html-css/blogpost.html" class="text-center">
+            <a href="blogpost.html" class="text-center">
               <img src="img/business.jpg " alt="" />
               <div class="home-article-bottom-m-1">
                 <h3>Title</h3>
@@ -146,7 +146,7 @@
             </a>
           </div>
           <div class="home-article-center">
-            <a href="/blog-in-html-css/blogpost.html" class="text-center">
+            <a href="blogpost.html" class="text-center">
               <img src="img/business.jpg " alt="" />
               <div class="home-article-bottom-m-1">
                 <h3>Title</h3>
