@@ -1,3 +1,4 @@
+//This function fetches data from the server and returns a list of articles.
 export async function fetch_articles() {
     console.log("Fetching articles...");
     let arr=[];

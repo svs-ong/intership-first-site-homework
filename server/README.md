@@ -4,7 +4,7 @@ A json-server used to mimic a HTTP based rest API for the react internship theor
 
 Make sure you have [Node.js](https://nodejs.org/en/) installed.
 
-Then, open a terminal at the root of `json-server` and run:
+Then, open a terminal at the root of `server` and run:
 
 ```bash
 npm install

@@ -1,16 +1,24 @@
 import { fetch_articles } from "../fetch_articles.js";
 
+//This will call the main function everytime the page is reloaded.
 document.addEventListener("DOMContentLoaded", main);
 
 async function main() {
-  let articles = await fetch_articles();
-  console.log(articles);
-  const articlesContainer = document.getElementById("articles-container");
+  let articles = await fetch_articles(); //gets the list of articles
+  console.log(articles); //displays the articles in console
+  const articlesContainer = document.getElementById("articles-container"); //gets a reference to the div with "articles-container" id.
+  // for each article, creates an element and inserts it into the article container.
   for (let article of articles) {
     let div = createDiv(article);
     articlesContainer.appendChild(div);
   }
 }
+
+/* gets the title from the article and creates and element that looks like this:
+<div class="article">
+  <h2>{article.title}</h2>
+</div>
+*/
 
 function createDiv(article) {
   const articleDiv = document.createElement("div"); // creates a new div
